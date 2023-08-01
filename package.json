@@ -28,14 +28,16 @@
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch"
   },
+  "dependencies": {
+    "chalk": "4",
+    "node-scp": "^0.0.22"
+  },
   "peerDependencies": {
-    "webpack": "^5"
+    "webpack": "^4"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
     "@types/ssh2": "^1.11.13",
-    "chalk": "^4",
-    "node-scp": "^0.0.22",
     "rimraf": "^3",
     "standard-version": "^9.5.0",
     "webpack": "^5.88.2"
