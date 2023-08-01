@@ -1,0 +1,43 @@
+{
+  "name": "sftp-uploader-webpack-plugin",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "author": "xTCry [Vladislav Kh] (https://github.com/xTCry/)",
+  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "sftp",
+    "upload",
+    "ssh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xTCry/sftp-uploader-webpack-plugin.git"
+  },
+  "homepage": "https://github.com/xTCry/sftp-uploader-webpack-plugin#readme",
+  "scripts": {
+    "clean": "rimraf lib && rimraf dist",
+    "prepublish": "yarn clean && yarn build",
+    "build": "tsc",
+    "release": "standard-version",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
+  },
+  "peerDependencies": {
+    "webpack": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/ssh2": "^1.11.13",
+    "chalk": "^4",
+    "node-scp": "^0.0.22",
+    "rimraf": "^3",
+    "standard-version": "^9.5.0",
+    "webpack": "^5.88.2"
+  }
+}
